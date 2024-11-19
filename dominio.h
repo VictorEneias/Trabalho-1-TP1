@@ -1,3 +1,6 @@
+#ifndef DOMINIO_H_INCLUDED
+#define DOMINIO_H_INCLUDED
+
 #include <stdexcept>
 #include <algorithm>
 
@@ -184,3 +187,5 @@ inline int SENHA::GetSenha()
 {
     return senha;
 }
+
+#endif
