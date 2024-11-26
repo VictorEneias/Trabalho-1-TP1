@@ -14,7 +14,6 @@ private:
 
 public:
     int GetAvaliacao();
-
     void SetAvaliacao(int);
 };
 

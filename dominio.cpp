@@ -15,7 +15,7 @@ void AVALIACAO::verifica(int avaliacao)
 
 void CODIGO::verifica(string codigo)
 {
-    if (codigo.length() < 7)
+    if (codigo.length() == 6)
     {
     }
     else
