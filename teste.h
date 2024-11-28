@@ -177,7 +177,7 @@ public:
 class TUCONTA {
 private:
     const string CODIGO_VALIDO = "123AbC";
-    const string SENHA_VALIDA = "Ch4m;";  /**< Constante que representa uma senha valida para o teste. */
+    const int SENHA_VALIDA = 12385;  /**< Constante que representa uma senha valida para o teste. */
     CONTA *conta;
     int estado; /**< Variável que armazena o estado do teste. */
     /**
@@ -198,7 +198,7 @@ class TUVIAGEM {
 private:
     const string CODIGO_VALIDO = "123AbC";
     const string NOME_VALIDO = "Victor Eneias"; 
-    const int AVALIACAO_VAlIDA = 4;
+    const int AVALIACAO_VALIDA = 4;
     VIAGEM *viagem;
     int estado; /**< Variável que armazena o estado do teste. */
     /**
@@ -221,7 +221,7 @@ private:
     const string NOME_VALIDO = "Victor Eneias"; 
     const string DATA_VALIDA = "19-11-03"; 
     const string HORARIO_VALIDO = "19:11"; 
-    const string DURACAO_VALIDA = "144"; 
+    const int DURACAO_VALIDA = 144; 
     const float PRECO_VALIDO = 15600.05; 
     const int AVALIACAO_VALIDA = 4;
     ATIVIDADE *atividade;
