@@ -136,4 +136,3 @@ inline NOME      HOSPEDAGEM::GetNome() const { return nome; }
 inline AVALIACAO HOSPEDAGEM::GetAvaliacao() const { return avaliacao; }
 inline DINHEIRO  HOSPEDAGEM::GetDiaria()const{return diaria;}
 #endif
-//joao pedro de souza lopes silva

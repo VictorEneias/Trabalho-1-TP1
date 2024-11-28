@@ -174,4 +174,115 @@ public:
     int Run(); /**< Método para executar os testes de unidade. */
 };
 
+class TUCONTA {
+private:
+    const string CODIGO_VALIDO = "123AbC";
+    const string SENHA_VALIDA = "Ch4m;";  /**< Constante que representa uma senha valida para o teste. */
+    CONTA *conta;
+    int estado; /**< Variável que armazena o estado do teste. */
+    /**
+    * Métodos privados
+    */
+    void SetUp(); /**< Método para configurar o ambiente de teste. */
+    void TearDown();  /**< Método para limpar o ambiente de teste. */
+    void TestarCenarioSucesso(); /**< Método para testar o cenário de sucesso. */   
+
+public:
+    const static int SUCESSO =  0;  /**< Constante que representa o estado de sucesso do teste. */
+    const static int FALHA = -1; /**< Constante que representa o estado de falha do teste. */
+    /**< Metodo publico */
+    int Run(); /**< Método para executar os testes de unidade. */
+};
+
+class TUVIAGEM {
+private:
+    const string CODIGO_VALIDO = "123AbC";
+    const string NOME_VALIDO = "Victor Eneias"; 
+    const int AVALIACAO_VAlIDA = 4;
+    VIAGEM *viagem;
+    int estado; /**< Variável que armazena o estado do teste. */
+    /**
+    * Métodos privados
+    */
+    void SetUp(); /**< Método para configurar o ambiente de teste. */
+    void TearDown();  /**< Método para limpar o ambiente de teste. */
+    void TestarCenarioSucesso(); /**< Método para testar o cenário de sucesso. */   
+
+public:
+    const static int SUCESSO =  0;  /**< Constante que representa o estado de sucesso do teste. */
+    const static int FALHA = -1; /**< Constante que representa o estado de falha do teste. */
+    /**< Metodo publico */
+    int Run(); /**< Método para executar os testes de unidade. */
+};
+
+class TUATIVIDADE {
+private:
+    const string CODIGO_VALIDO = "123AbC";
+    const string NOME_VALIDO = "Victor Eneias"; 
+    const string DATA_VALIDA = "19-11-03"; 
+    const string HORARIO_VALIDO = "19:11"; 
+    const string DURACAO_VALIDA = "144"; 
+    const float PRECO_VALIDO = 15600.05; 
+    const int AVALIACAO_VALIDA = 4;
+    ATIVIDADE *atividade;
+    int estado; /**< Variável que armazena o estado do teste. */
+    /**
+    * Métodos privados
+    */
+    void SetUp(); /**< Método para configurar o ambiente de teste. */
+    void TearDown();  /**< Método para limpar o ambiente de teste. */
+    void TestarCenarioSucesso(); /**< Método para testar o cenário de sucesso. */   
+
+public:
+    const static int SUCESSO =  0;  /**< Constante que representa o estado de sucesso do teste. */
+    const static int FALHA = -1; /**< Constante que representa o estado de falha do teste. */
+    /**< Metodo publico */
+    int Run(); /**< Método para executar os testes de unidade. */
+};
+
+class TUDESTINO {
+private:
+    const string CODIGO_VALIDO = "123AbC";
+    const string NOME_VALIDO = "Victor Eneias"; 
+    const string DATA_INICIO_VALIDA = "19-11-03"; 
+    const string DATA_FINAL_VALIDA = "04-05-04"; 
+    const int AVALIACAO_VALIDA = 4;
+    DESTINO *destino;
+    int estado; /**< Variável que armazena o estado do teste. */
+    /**
+    * Métodos privados
+    */
+    void SetUp(); /**< Método para configurar o ambiente de teste. */
+    void TearDown();  /**< Método para limpar o ambiente de teste. */
+    void TestarCenarioSucesso(); /**< Método para testar o cenário de sucesso. */   
+
+public:
+    const static int SUCESSO =  0;  /**< Constante que representa o estado de sucesso do teste. */
+    const static int FALHA = -1; /**< Constante que representa o estado de falha do teste. */
+    /**< Metodo publico */
+    int Run(); /**< Método para executar os testes de unidade. */
+};
+
+class TUHOSPEDAGEM {
+private:
+    const string CODIGO_VALIDO = "123AbC";
+    const string NOME_VALIDO = "Victor Eneias";
+    const float PRECO_VALIDO = 15600.05; 
+    const int AVALIACAO_VALIDA = 4;
+    HOSPEDAGEM *hospedagem;
+    int estado; /**< Variável que armazena o estado do teste. */
+    /**
+    * Métodos privados
+    */
+    void SetUp(); /**< Método para configurar o ambiente de teste. */
+    void TearDown();  /**< Método para limpar o ambiente de teste. */
+    void TestarCenarioSucesso(); /**< Método para testar o cenário de sucesso. */   
+
+public:
+    const static int SUCESSO =  0;  /**< Constante que representa o estado de sucesso do teste. */
+    const static int FALHA = -1; /**< Constante que representa o estado de falha do teste. */
+    /**< Metodo publico */
+    int Run(); /**< Método para executar os testes de unidade. */
+};
+
 #endif
