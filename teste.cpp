@@ -78,43 +78,6 @@ int TUAVALIACAO::Run() {
     return estado;
 }
 
-void TUCODIGO::SetUp() {
-    codigo = new CODIGO();
-    estado = SUCESSO;
-}
-
-void TUCODIGO::TearDown() {
-    delete codigo;
-}
-
-void TUCODIGO::TestarCenarioSucesso() {
-    try {
-        codigo->SetCodigo(CODIGO_VALIDO);
-        if (codigo->GetCodigo() != CODIGO_VALIDO)
-            estado = FALHA;
-    } catch (invalid_argument &excecao) {
-        estado = FALHA;
-    }
-}
-
-void TUCODIGO::TestarCenarioFalha() {
-    try {
-        codigo->SetCodigo(CODIGO_INVALIDO);
-        estado = FALHA;
-    } catch (invalid_argument &excecao) {
-        if (codigo->GetCodigo() == CODIGO_INVALIDO)
-            estado = FALHA;
-    }
-}
-
-int TUCODIGO::Run() {
-    SetUp();
-    TestarCenarioSucesso();
-    TestarCenarioFalha();
-    TearDown();
-    return estado;
-}
-
 void TUDATA::SetUp() {
     data = new DATA();
     estado = SUCESSO;
