@@ -9,7 +9,7 @@ using namespace std;
 class TUAVALIACAO {
 private:
     const int AVALIACAO_VALIDA   = 4; /**< Constante que representa um código válido para o teste. */
-    const int AVALIACAO_INVALIDA = 7.6; /**< Constante que representa um código inválido para o teste. */
+    const int AVALIACAO_INVALIDA = 6; /**< Constante que representa um código inválido para o teste. */
     AVALIACAO *avaliacao;
     int estado; /**< Variável que armazena o estado do teste. */
     /**
@@ -51,7 +51,7 @@ public:
 class TUDATA {
 private:
     const string DATA_VALIDA   = "05-09-03"; /**< Constante que representa um código válido para o teste. */
-    const string DATA_INVALIDA = "31-31-31"; /**< Constante que representa um código inválido para o teste. */
+    const string DATA_INVALIDA = "31-04-03"; /**< Constante que representa um código inválido para o teste. */
     DATA *data;
     int estado; /**< Variável que armazena o estado do teste. */
     /**

@@ -19,27 +19,27 @@ int main() {
     TUAVALIACAO testeB; /**< teste para a classe TUCOLUNA*/
 
     switch(testeB.Run()){
-        case TUAVALIACAO::SUCESSO: cout << "SUCESSO - COLUNA" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - COLUNA".*/
+        case TUAVALIACAO::SUCESSO: cout << "SUCESSO - AVALIACAO" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - COLUNA".*/
             break;
-        case TUAVALIACAO::FALHA  : cout << "FALHA  - COLUNA" << endl;  /**< Se o teste falhar, imprime "FALHA  - COLUNA". */
+        case TUAVALIACAO::FALHA  : cout << "FALHA  - AVALIACAO" << endl;  /**< Se o teste falhar, imprime "FALHA  - COLUNA". */
             break;
     }
 
     TUDATA testeC; /**< teste para a classe TUEMAIL*/
 
     switch(testeC.Run()){
-        case TUDATA::SUCESSO: cout << "SUCESSO - EMAIL" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - EMAIL".*/
+        case TUDATA::SUCESSO: cout << "SUCESSO - DATA" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - EMAIL".*/
             break;
-        case TUDATA::FALHA  : cout << "FALHA  - EMAIL" << endl;  /** Se o teste falhar, imprime "FALHA  - EMAIL". */
+        case TUDATA::FALHA  : cout << "FALHA  - DATA" << endl;  /** Se o teste falhar, imprime "FALHA  - EMAIL". */
             break;
     }
 
     TUDINHEIRO testeD; /**< teste para a classe TULIMITE*/
 
     switch(testeD.Run()){
-        case TUDINHEIRO::SUCESSO: cout << "SUCESSO - LIMITE" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - LIMITE".*/
+        case TUDINHEIRO::SUCESSO: cout << "SUCESSO - DINHEIRO" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - LIMITE".*/
             break;
-        case TUDINHEIRO::FALHA  : cout << "FALHA  - LIMITE" << endl;  /** Se o teste falhar, imprime "FALHA  - LIMITE". */
+        case TUDINHEIRO::FALHA  : cout << "FALHA  - DINHEIRO" << endl;  /** Se o teste falhar, imprime "FALHA  - LIMITE". */
             break;
     }
 
@@ -55,9 +55,9 @@ int main() {
     TUDURACAO testeF;
 
     switch(testeF.Run()){
-        case TUDURACAO::SUCESSO: cout << "SUCESSO - TEXTO" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - TEXTO".*/
+        case TUDURACAO::SUCESSO: cout << "SUCESSO - DURACAO" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - TEXTO".*/
             break;
-        case TUDURACAO::FALHA  : cout << "FALHA  - TEXTO" << endl;  /** Se o teste falhar, imprime "FALHA  - TEXTO". */
+        case TUDURACAO::FALHA  : cout << "FALHA  - DURACAO" << endl;  /** Se o teste falhar, imprime "FALHA  - TEXTO". */
             break;
     }
 
@@ -73,54 +73,54 @@ int main() {
     TUHORARIO testeH; /**< teste para a classe TUQUADRO*/
 
     switch(testeH.Run()){
-        case TUHORARIO::SUCESSO: cout << "SUCESSO - QUADRO" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - QUADRO".*/
+        case TUHORARIO::SUCESSO: cout << "SUCESSO - HORARIO" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - QUADRO".*/
             break;
-        case TUHORARIO::FALHA  : cout << "FALHA - QUADRO" << endl;  /** Se o teste falhar, imprime "FALHA  - QUADRO". */
+        case TUHORARIO::FALHA  : cout << "FALHA - HORARIO" << endl;  /** Se o teste falhar, imprime "FALHA  - QUADRO". */
             break;
     }
 
     TUNOME testeI;
 
     switch(testeI.Run()){
-        case TUNOME::SUCESSO: cout << "SUCESSO - CARTAO" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - CARTAO".*/
+        case TUNOME::SUCESSO: cout << "SUCESSO - NOME" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - CARTAO".*/
             break;
-        case TUNOME::FALHA  : cout << "FALHA - CARTAO" << endl;  /** Se o teste falhar, imprime "FALHA  - CARTAO". */
+        case TUNOME::FALHA  : cout << "FALHA - NOME" << endl;  /** Se o teste falhar, imprime "FALHA  - CARTAO". */
             break;
     }
 
     TUVIAGEM testeJ;
 
     switch(testeJ.Run()){
-        case TUVIAGEM::SUCESSO: cout << "SUCESSO - TEXTO" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - TEXTO".*/
+        case TUVIAGEM::SUCESSO: cout << "SUCESSO - VIAGEM" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - TEXTO".*/
             break;
-        case TUVIAGEM::FALHA  : cout << "FALHA  - TEXTO" << endl;  /** Se o teste falhar, imprime "FALHA  - TEXTO". */
+        case TUVIAGEM::FALHA  : cout << "FALHA  - VIAGEM" << endl;  /** Se o teste falhar, imprime "FALHA  - TEXTO". */
             break;
     }
 
     TUATIVIDADE testeK;
 
     switch(testeK.Run()){
-        case TUATIVIDADE::SUCESSO: cout << "SUCESSO - TEXTO" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - TEXTO".*/
+        case TUATIVIDADE::SUCESSO: cout << "SUCESSO - ATIVIDADE" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - TEXTO".*/
             break;
-        case TUATIVIDADE::FALHA  : cout << "FALHA  - TEXTO" << endl;  /** Se o teste falhar, imprime "FALHA  - TEXTO". */
+        case TUATIVIDADE::FALHA  : cout << "FALHA  - ATIVIDADE" << endl;  /** Se o teste falhar, imprime "FALHA  - TEXTO". */
             break;
     }
 
     TUDESTINO testeL;
 
     switch(testeL.Run()){
-        case TUDESTINO::SUCESSO: cout << "SUCESSO - TEXTO" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - TEXTO".*/
+        case TUDESTINO::SUCESSO: cout << "SUCESSO - DESTINO" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - TEXTO".*/
             break;
-        case TUDESTINO::FALHA  : cout << "FALHA  - TEXTO" << endl;  /** Se o teste falhar, imprime "FALHA  - TEXTO". */
+        case TUDESTINO::FALHA  : cout << "FALHA  - DESTINO" << endl;  /** Se o teste falhar, imprime "FALHA  - TEXTO". */
             break;
     }
 
     TUHOSPEDAGEM testeM;
 
     switch(testeM.Run()){
-        case TUHOSPEDAGEM::SUCESSO: cout << "SUCESSO - TEXTO" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - TEXTO".*/
+        case TUHOSPEDAGEM::SUCESSO: cout << "SUCESSO - HOSPEDAGEM" << endl; /**< Se o teste for bem-sucedido, imprime "SUCESSO - TEXTO".*/
             break;
-        case TUHOSPEDAGEM::FALHA  : cout << "FALHA  - TEXTO" << endl;  /** Se o teste falhar, imprime "FALHA  - TEXTO". */
+        case TUHOSPEDAGEM::FALHA  : cout << "FALHA  - HOSPEDAGEM" << endl;  /** Se o teste falhar, imprime "FALHA  - TEXTO". */
             break;
     }
     return 0;

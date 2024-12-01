@@ -1,15 +1,11 @@
 #include "dominio.h"
+#include <iostream>
 
 using namespace std;
 
-void AVALIACAO::verifica(int avaliacao)
-{
-    if (avaliacao > 6 & avaliacao < 0)
-    {
-    }
-    else
-    {
-        throw invalid_argument("Argumento invalido");
+void AVALIACAO::verifica(int avaliacao) {
+    if (avaliacao < 0 || avaliacao > 5) {
+        throw invalid_argument("Avaliação inválida: valor fora do intervalo permitido (0-5)");
     }
 }
 
@@ -35,42 +31,24 @@ void CODIGO::verifica(string codigo)
         }
     }
 }
-void DATA::verifica(string data)
-{
-    if (data.length() == 10) // 00/00/00
-    {
-        if (isdigit(data[0]) && isdigit(data[1]) && isdigit(data[3]) && isdigit(data[4]) && isdigit(data[6]) && isdigit(data[7]))
-        {
-
-            int day = (int(data[0] * 10)) + (int(data[1]));
-            int month = (int(data[3] * 10)) + (int(data[4]));
-            int ano = (int(data[6] * 10)) + (int(data[7]));
-            if (ano < 0)
-            {
-                throw invalid_argument("Argumento invalido");
-            }
-            else if (month < 1 || month > 12)
-            {
-                throw invalid_argument("Argumento invalido");
-            }
-            else if (day < 1 ||
-                     /*dias de mes 30*/ (day > 30 && (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)) ||
-                     /*dias de mes 31*/ (day > 31 && (month == 4 || month == 6 || month == 9 || month == 11)) ||
-                     /*mes 29 e ano bissextos*/ (day > 29 && month == 2 && (ano % 4 == 0)) ||
-                     /*mes 28 e ano  nao bissextos*/ (day > 28 && month == 2) && (ano % 4 != 0))
-            {
-
-                throw invalid_argument("Argumento invalido");
-            }
-        }
-        else
-        {
-            throw invalid_argument("Argumento invalido");
-        }
+void DATA::verifica(string data) {
+    if (data.length() != 8 || data[2] != '-' || data[5] != '-') {
+        throw invalid_argument("Data inválida: formato incorreto");
     }
-    else
-    {
-        throw invalid_argument("Argumento invalido");
+
+    int day = (data[0] - '0') * 10 + (data[1] - '0');
+    int month = (data[3] - '0') * 10 + (data[4] - '0');
+    int year = (data[6] - '0') * 10 + (data[7] - '0');
+
+    if (month < 1 || month > 12) {
+        throw invalid_argument("Data inválida: mês fora do intervalo permitido (1-12)");
+    }
+
+    bool is_leap_year = (year % 4 == 0);
+    int max_days_in_month[] = {0, 31, (is_leap_year ? 29 : 28), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+    if (day < 1 || day > max_days_in_month[month]) {
+        throw invalid_argument("Data inválida: dia fora do intervalo permitido para o mês");
     }
 }
 
@@ -99,38 +77,24 @@ void HORARIO::verifica(string horario)
 {
     if (horario.length() != 5)
     {
-        throw invalid_argument("Argumento invalido");
+        throw invalid_argument("Argumento invalido1");
     }
     else if (isdigit(horario[0]) != true || isdigit(horario[1]) != true ||
              isdigit(horario[3]) != true || isdigit(horario[4]) != true)
     {
-        throw invalid_argument("Argumento invalido");
+        throw invalid_argument("Argumento invalido2");
     }
     else
     {
-        int hora = 10 * int(horario[0]) + int(horario[1]);
-        int min = 10 * int(horario[3]) + int(horario[4]);
-        if (hora <= 0 || hora > 23 || min <= 0 || min > 59)
+        int hora = (10 * (horario[0] - '0')) + (horario[1] - '0');
+        int min = (10 * (horario[3] - '0')) + (horario[4] - '0');
+        if (hora < 0 || hora > 23 || min < 0 || min > 59)
         {
-            throw invalid_argument("Argumento invalido");
+            throw invalid_argument("Argumento invalido3");
         }
     }
 }
-void SENHA::verifica(int _senha)
-{
-    string senha = to_string(_senha);
-    if (senha.length() != 5)
-    {
-        throw invalid_argument("Argumento invalido");
-    }
-    else if (senhatest(senha))
-    {
-        throw invalid_argument("Argumento invalido");
-    }
 
-    {
-    }
-}
 bool senhatest(string senha)
 {
     if (senha.length() != 5){ // Check if senha has at least 5 characters
@@ -180,4 +144,20 @@ bool senhatest(string senha)
         
     }
     return false;
+}
+
+void SENHA::verifica(int _senha)
+{
+    string senha = to_string(_senha);
+    if (senha.length() != 5)
+    {
+        throw invalid_argument("Argumento invalido");
+    }
+    else if (senhatest(senha))
+    {
+        throw invalid_argument("Argumento invalido");
+    }
+
+    {
+    }
 }
