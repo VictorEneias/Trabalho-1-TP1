@@ -25,8 +25,6 @@ void CODIGO::verifica(string codigo)
         }
         else
         {
-            // sugestao de adicionar codigo de erro exemplo
-            //  Argumento invalido cod:500 invalid char ou Argumento invalido: invalid char
             throw invalid_argument("Argumento invalido");
         }
     }
@@ -97,7 +95,7 @@ void HORARIO::verifica(string horario)
 
 bool senhatest(string senha)
 {
-    if (senha.length() != 5){ // Check if senha has at least 5 characters
+    if (senha.length() != 5){
         return true;
     }
     int array[5];
@@ -105,15 +103,14 @@ bool senhatest(string senha)
     {
         if (isdigit(senha[i]))
         {
-            array[i] = senha[i] - '0'; // Convert char to int
+            array[i] = senha[i] - '0';
         }
         else
         {
-            return true; // Return false if a non-digit is found
+            return true;
         }
     }
 
-    // Check if the digits form an increasing or decreasing sequence
     if ((array[0] == array[1] - 1 &&
          array[1] == array[2] - 1 &&
          array[2] == array[3] - 1 &&

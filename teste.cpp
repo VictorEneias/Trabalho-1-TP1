@@ -1,15 +1,15 @@
 #include "teste.h"
 
-void TUCODIGO::SetUp(){ /** Configura o ambiente de teste. */
+void TUCODIGO::SetUp(){
     codigo = new CODIGO();
     estado = SUCESSO;
 }
 
-void TUCODIGO::TearDown(){ /** Limpa o ambiente de teste, excluindo a instância CODIGO. */
+void TUCODIGO::TearDown(){
     delete codigo;
 }
 
-void TUCODIGO::TestarCenarioSucesso(){ /** Testa um cenário de sucesso em que o código é definido como um código válido. */
+void TUCODIGO::TestarCenarioSucesso(){ 
     try{
         codigo->SetCodigo(CODIGO_VALIDO);
         if (codigo->GetCodigo() != CODIGO_VALIDO)
@@ -20,7 +20,7 @@ void TUCODIGO::TestarCenarioSucesso(){ /** Testa um cenário de sucesso em que o
     }
 }
 
-void TUCODIGO::TestarCenarioFalha(){ /** Testa um cenário de falha em que o código é definido como um código inválido, */
+void TUCODIGO::TestarCenarioFalha(){
     try{
         codigo->SetCodigo(CODIGO_INVALIDO);
         estado = FALHA;
@@ -36,7 +36,7 @@ int TUCODIGO::Run(){
     TestarCenarioSucesso();
     TestarCenarioFalha();
     TearDown();
-    return estado; /**< Retorna o estado final dos testes (SUCESSO ou FALHA). */
+    return estado;
 }
 
 #include "teste.h"
@@ -190,16 +190,16 @@ int TUDURACAO::Run() {
 }
 
 
-void TUCONTA::SetUp(){  /** Configura o ambiente de teste. */
+void TUCONTA::SetUp(){
     conta = new CONTA();
     estado = SUCESSO;
 }
 
-void TUCONTA::TearDown(){ /** Limpa o ambiente de teste, excluindo a instância CONTA. */
+void TUCONTA::TearDown(){
     delete conta;
 }
 
-void TUCONTA::TestarCenarioSucesso(){ /** Testa um cenário de sucesso em que a conta é definida como uma conta válida. */
+void TUCONTA::TestarCenarioSucesso(){
 
     CODIGO codigo;
     codigo.SetCodigo(CODIGO_VALIDO);
