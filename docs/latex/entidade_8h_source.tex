@@ -1,0 +1,179 @@
+\doxysection{entidade.\+h}
+\hypertarget{entidade_8h_source}{}\label{entidade_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ENTIDADE\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ENTIDADE\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}dominio.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCONTA}{CONTA}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ codigo;\ }
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{classSENHA}{SENHA}}\ senha;\ \ \ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCONTA_af6965776c15d82202740e27ee947e300}{SetCodigo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \&);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCONTA_a028ea1bcfdd45efec4936554ce846e94}{SetSenha}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSENHA}{SENHA}}\ \&);}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \mbox{\hyperlink{classCONTA_a03bf6d28cfb8d36a3f1e1b7c64828043}{GetCodigo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{classSENHA}{SENHA}}\ \mbox{\hyperlink{classCONTA_a52e45fe7cdd6c8e87b681d14a5951193}{GetSenha}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCONTA_af6965776c15d82202740e27ee947e300}{CONTA::SetCodigo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \&\_codigo)\ \{\ codigo\ =\ \_codigo;\ \}}
+\DoxyCodeLine{00039\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCONTA_a028ea1bcfdd45efec4936554ce846e94}{CONTA::SetSenha}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSENHA}{SENHA}}\ \&\_senha)\ \{\ senha\ =\ \_senha;\ \}}
+\DoxyCodeLine{00040\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \mbox{\hyperlink{classCONTA_a03bf6d28cfb8d36a3f1e1b7c64828043}{CONTA::GetCodigo}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ codigo;\ \}}
+\DoxyCodeLine{00041\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classSENHA}{SENHA}}\ \mbox{\hyperlink{classCONTA_a52e45fe7cdd6c8e87b681d14a5951193}{CONTA::GetSenha}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ senha;\ \}}
+\DoxyCodeLine{00045\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classVIAGEM}{VIAGEM}}}
+\DoxyCodeLine{00046\ \{}
+\DoxyCodeLine{00047\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ codigo;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{classNOME}{NOME}}\ nome;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ avaliacao;\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classVIAGEM_a1b56453186b38f6517546ed5b53eb20e}{SetCodigo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCODIGO}{CODIGO}}\&\ \_codigo);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classVIAGEM_ab57e33a0822ced62f66a60b17df9eb3c}{SetNome}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classNOME}{NOME}}\&\ \_nome);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classVIAGEM_a50d12bf4d2ed14d90f83ae233fec2257}{SetAvaliacao}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\&\ \_avaliacao);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \mbox{\hyperlink{classVIAGEM_ae68748c064febaadb3a47e877682ba9f}{GetCodigo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{classNOME}{NOME}}\ \mbox{\hyperlink{classVIAGEM_a870aec8e36c493513a3e050634644340}{GetNome}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00086\ \ \ \ \ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ \mbox{\hyperlink{classVIAGEM_a5860ad186e236a703246d51eb6aa4c0a}{GetAvaliacao}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00087\ \};}
+\DoxyCodeLine{00088\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classVIAGEM_a1b56453186b38f6517546ed5b53eb20e}{VIAGEM::SetCodigo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \&\_codigo)\ \{\ codigo\ =\ \_codigo;\ \}}
+\DoxyCodeLine{00089\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classVIAGEM_ab57e33a0822ced62f66a60b17df9eb3c}{VIAGEM::SetNome}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classNOME}{NOME}}\ \&\_nome)\ \{\ nome\ =\ \_nome;\ \}}
+\DoxyCodeLine{00090\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classVIAGEM_a50d12bf4d2ed14d90f83ae233fec2257}{VIAGEM::SetAvaliacao}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ \&\_avaliacao)\ \{\ avaliacao\ =\ \_avaliacao;\ \}}
+\DoxyCodeLine{00091\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \mbox{\hyperlink{classVIAGEM_ae68748c064febaadb3a47e877682ba9f}{VIAGEM::GetCodigo}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ codigo;\ \}}
+\DoxyCodeLine{00092\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classNOME}{NOME}}\ \mbox{\hyperlink{classVIAGEM_a870aec8e36c493513a3e050634644340}{VIAGEM::GetNome}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ nome;\ \}}
+\DoxyCodeLine{00093\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ \mbox{\hyperlink{classVIAGEM_a5860ad186e236a703246d51eb6aa4c0a}{VIAGEM::GetAvaliacao}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ avaliacao;\ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00098\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classATIVIDADE}{ATIVIDADE}}\ \{}
+\DoxyCodeLine{00099\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ codigo;\ \ \ \ \ \ }
+\DoxyCodeLine{00101\ \ \ \ \ \mbox{\hyperlink{classNOME}{NOME}}\ nome;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{classDATA}{DATA}}\ data;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00103\ \ \ \ \ \mbox{\hyperlink{classHORARIO}{HORARIO}}\ horario;\ \ \ \ }
+\DoxyCodeLine{00104\ \ \ \ \ \mbox{\hyperlink{classDURACAO}{DURACAO}}\ duracao;\ \ \ \ }
+\DoxyCodeLine{00105\ \ \ \ \ \mbox{\hyperlink{classDINHEIRO}{DINHEIRO}}\ preco;\ \ \ \ \ }
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ avaliacao;\ }
+\DoxyCodeLine{00107\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classATIVIDADE_ac0724f97fc3a1f2cd77c2d4812b07422}{SetCodigo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCODIGO}{CODIGO}}\&\ \_codigo);}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classATIVIDADE_a5c65d4330e4b25bb79337aa7077c5324}{SetNome}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classNOME}{NOME}}\&\ \_nome);}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classATIVIDADE_a859de6e728fc1674a20b15616075ab91}{SetData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDATA}{DATA}}\&\ \_data);}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classATIVIDADE_a22b9d33ceee8a62718e1b239ccd8bff4}{SetHorario}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classHORARIO}{HORARIO}}\&\ \_horario);}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classATIVIDADE_a20eb8bcb937be0565538704165fa5f52}{SetDuracao}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDURACAO}{DURACAO}}\&\ \_duracao);}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classATIVIDADE_ae9a79c37e3121224b60dbdf21393e160}{SetPreco}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDINHEIRO}{DINHEIRO}}\&\ \_preco);}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classATIVIDADE_a495b1ed5958633f12f46c14a16774387}{SetAvaliacao}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\&\ \_avaliacao);}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00154\ \ \ \ \ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \mbox{\hyperlink{classATIVIDADE_a77364804519df7b7b966372a1b59fac6}{GetCodigo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00160\ \ \ \ \ \mbox{\hyperlink{classNOME}{NOME}}\ \mbox{\hyperlink{classATIVIDADE_a490b234c9d167152f18b48e78e7275fb}{GetNome}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00166\ \ \ \ \ \mbox{\hyperlink{classDATA}{DATA}}\ \mbox{\hyperlink{classATIVIDADE_ad2c2da05d2dd2caee0699d461417e4dc}{GetData}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00172\ \ \ \ \ \mbox{\hyperlink{classHORARIO}{HORARIO}}\ \mbox{\hyperlink{classATIVIDADE_a3a143a63f9b5555c8b697e2572888f4b}{GetHorario}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00178\ \ \ \ \ \mbox{\hyperlink{classDURACAO}{DURACAO}}\ \mbox{\hyperlink{classATIVIDADE_aa80b8021d61062991e4ec1670f608051}{GetDuracao}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00184\ \ \ \ \ \mbox{\hyperlink{classDINHEIRO}{DINHEIRO}}\ \mbox{\hyperlink{classATIVIDADE_ab738882ef94f8d23fe8642e915a20141}{GetPreco}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00190\ \ \ \ \ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ \mbox{\hyperlink{classATIVIDADE_a8e17d3ce4f133aae139c8eea700b8d07}{GetAvaliacao}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00191\ \};}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classATIVIDADE_ac0724f97fc3a1f2cd77c2d4812b07422}{ATIVIDADE::SetCodigo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \&\_codigo)\ \{\ codigo\ =\ \_codigo;\ \}}
+\DoxyCodeLine{00194\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classATIVIDADE_a5c65d4330e4b25bb79337aa7077c5324}{ATIVIDADE::SetNome}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classNOME}{NOME}}\ \&\_nome)\ \{\ nome\ =\ \_nome;\ \}}
+\DoxyCodeLine{00195\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classATIVIDADE_a859de6e728fc1674a20b15616075ab91}{ATIVIDADE::SetData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDATA}{DATA}}\ \&\_data)\ \{\ data\ =\ \_data;\ \}}
+\DoxyCodeLine{00196\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classATIVIDADE_a22b9d33ceee8a62718e1b239ccd8bff4}{ATIVIDADE::SetHorario}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classHORARIO}{HORARIO}}\ \&\_horario)\ \{\ horario\ =\ \_horario;\ \}}
+\DoxyCodeLine{00197\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classATIVIDADE_a20eb8bcb937be0565538704165fa5f52}{ATIVIDADE::SetDuracao}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDURACAO}{DURACAO}}\ \&\_duracao)\ \{\ duracao\ =\ \_duracao;\ \}}
+\DoxyCodeLine{00198\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classATIVIDADE_ae9a79c37e3121224b60dbdf21393e160}{ATIVIDADE::SetPreco}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDINHEIRO}{DINHEIRO}}\ \&\_preco)\ \{\ preco\ =\ \_preco;\ \}}
+\DoxyCodeLine{00199\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classATIVIDADE_a495b1ed5958633f12f46c14a16774387}{ATIVIDADE::SetAvaliacao}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ \&\_avaliacao)\ \{\ avaliacao\ =\ \_avaliacao;\ \}}
+\DoxyCodeLine{00200\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \mbox{\hyperlink{classATIVIDADE_a77364804519df7b7b966372a1b59fac6}{ATIVIDADE::GetCodigo}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ codigo;\ \}}
+\DoxyCodeLine{00201\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classNOME}{NOME}}\ \mbox{\hyperlink{classATIVIDADE_a490b234c9d167152f18b48e78e7275fb}{ATIVIDADE::GetNome}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ nome;\ \}}
+\DoxyCodeLine{00202\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classDATA}{DATA}}\ \mbox{\hyperlink{classATIVIDADE_ad2c2da05d2dd2caee0699d461417e4dc}{ATIVIDADE::GetData}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ data;\ \}}
+\DoxyCodeLine{00203\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classHORARIO}{HORARIO}}\ \mbox{\hyperlink{classATIVIDADE_a3a143a63f9b5555c8b697e2572888f4b}{ATIVIDADE::GetHorario}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ horario;\ \}}
+\DoxyCodeLine{00204\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classDURACAO}{DURACAO}}\ \mbox{\hyperlink{classATIVIDADE_aa80b8021d61062991e4ec1670f608051}{ATIVIDADE::GetDuracao}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ duracao;\ \}}
+\DoxyCodeLine{00205\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classDINHEIRO}{DINHEIRO}}\ \mbox{\hyperlink{classATIVIDADE_ab738882ef94f8d23fe8642e915a20141}{ATIVIDADE::GetPreco}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ preco;\ \}}
+\DoxyCodeLine{00206\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ \mbox{\hyperlink{classATIVIDADE_a8e17d3ce4f133aae139c8eea700b8d07}{ATIVIDADE::GetAvaliacao}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ avaliacao;\ \}}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00211\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDESTINO}{DESTINO}}\ \{}
+\DoxyCodeLine{00212\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00213\ \ \ \ \ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ codigo;\ \ \ \ \ \ }
+\DoxyCodeLine{00214\ \ \ \ \ \mbox{\hyperlink{classNOME}{NOME}}\ nome;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00215\ \ \ \ \ \mbox{\hyperlink{classDATA}{DATA}}\ data\_fim;\ \ \ \ \ \ }
+\DoxyCodeLine{00216\ \ \ \ \ \mbox{\hyperlink{classDATA}{DATA}}\ data\_inicio;\ \ \ }
+\DoxyCodeLine{00217\ \ \ \ \ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ avaliacao;\ }
+\DoxyCodeLine{00218\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00223\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDESTINO_a363c4202d0edadffb07fca3033da8a7d}{SetCodigo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCODIGO}{CODIGO}}\&\ \_codigo);}
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00229\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDESTINO_a964109a1274e06dd7b5511040420a2c8}{SetNome}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classNOME}{NOME}}\&\ \_nome);}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00235\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDESTINO_a8998cf635f0002012c43aa4c5a06dd9b}{SetDataInicio}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDATA}{DATA}}\&\ \_data\_inicio);}
+\DoxyCodeLine{00236\ }
+\DoxyCodeLine{00241\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDESTINO_a7c4e2ab6806a34f4261da7aa7f77d9f6}{SetDataFim}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDATA}{DATA}}\&\ \_data\_fim);}
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00247\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDESTINO_a668d8e61abf76e869ea526dbcd4088df}{SetAvaliacao}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\&\ \_avaliacao);}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00253\ \ \ \ \ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \mbox{\hyperlink{classDESTINO_a7db9d35573f1c23656ab74f8f951bf87}{GetCodigo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00254\ }
+\DoxyCodeLine{00259\ \ \ \ \ \mbox{\hyperlink{classNOME}{NOME}}\ \mbox{\hyperlink{classDESTINO_a7564419e6f6b26b6cef2256ddc6f520c}{GetNome}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00260\ }
+\DoxyCodeLine{00265\ \ \ \ \ \mbox{\hyperlink{classDATA}{DATA}}\ \mbox{\hyperlink{classDESTINO_a08a874735314000a3199a0df1c790e53}{GetDataInicio}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00266\ }
+\DoxyCodeLine{00271\ \ \ \ \ \mbox{\hyperlink{classDATA}{DATA}}\ \mbox{\hyperlink{classDESTINO_a0956aad8ef1ccc1f8dc2005a97ceaa05}{GetDataFim}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00272\ }
+\DoxyCodeLine{00277\ \ \ \ \ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ \mbox{\hyperlink{classDESTINO_ad2ee4028329d28a9c4b40b941b6b7c4a}{GetAvaliacao}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00278\ \};}
+\DoxyCodeLine{00279\ }
+\DoxyCodeLine{00280\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDESTINO_a363c4202d0edadffb07fca3033da8a7d}{DESTINO::SetCodigo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \&\_codigo)\ \{\ codigo\ =\ \_codigo;\ \}}
+\DoxyCodeLine{00281\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDESTINO_a964109a1274e06dd7b5511040420a2c8}{DESTINO::SetNome}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classNOME}{NOME}}\ \&\_nome)\ \{\ nome\ =\ \_nome;\ \}}
+\DoxyCodeLine{00282\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDESTINO_a668d8e61abf76e869ea526dbcd4088df}{DESTINO::SetAvaliacao}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ \&\_avaliacao)\ \{\ avaliacao\ =\ \_avaliacao;\ \}}
+\DoxyCodeLine{00283\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDESTINO_a8998cf635f0002012c43aa4c5a06dd9b}{DESTINO::SetDataInicio}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDATA}{DATA}}\ \&\_data\_inicio)\ \{\ data\_inicio\ =\ \_data\_inicio;\ \}}
+\DoxyCodeLine{00284\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDESTINO_a7c4e2ab6806a34f4261da7aa7f77d9f6}{DESTINO::SetDataFim}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDATA}{DATA}}\ \&\_data\_fim)\ \{\ data\_fim\ =\ \_data\_fim;\ \}}
+\DoxyCodeLine{00285\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \mbox{\hyperlink{classDESTINO_a7db9d35573f1c23656ab74f8f951bf87}{DESTINO::GetCodigo}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ codigo;\ \}}
+\DoxyCodeLine{00286\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classNOME}{NOME}}\ \mbox{\hyperlink{classDESTINO_a7564419e6f6b26b6cef2256ddc6f520c}{DESTINO::GetNome}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ nome;\ \}}
+\DoxyCodeLine{00287\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ \mbox{\hyperlink{classDESTINO_ad2ee4028329d28a9c4b40b941b6b7c4a}{DESTINO::GetAvaliacao}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ avaliacao;\ \}}
+\DoxyCodeLine{00288\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classDATA}{DATA}}\ \mbox{\hyperlink{classDESTINO_a0956aad8ef1ccc1f8dc2005a97ceaa05}{DESTINO::GetDataFim}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ data\_fim;\ \}}
+\DoxyCodeLine{00289\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classDATA}{DATA}}\ \mbox{\hyperlink{classDESTINO_a08a874735314000a3199a0df1c790e53}{DESTINO::GetDataInicio}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ data\_inicio;\ \}}
+\DoxyCodeLine{00290\ }
+\DoxyCodeLine{00294\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classHOSPEDAGEM}{HOSPEDAGEM}}\ \{}
+\DoxyCodeLine{00295\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00296\ \ \ \ \ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ codigo;\ \ \ \ \ \ }
+\DoxyCodeLine{00297\ \ \ \ \ \mbox{\hyperlink{classNOME}{NOME}}\ nome;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00298\ \ \ \ \ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ avaliacao;\ }
+\DoxyCodeLine{00299\ \ \ \ \ \mbox{\hyperlink{classDINHEIRO}{DINHEIRO}}\ diaria;\ \ \ \ }
+\DoxyCodeLine{00300\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00305\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHOSPEDAGEM_a3d91a086e15246866970dc3767fa0c4a}{SetCodigo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCODIGO}{CODIGO}}\&\ \_codigo);}
+\DoxyCodeLine{00306\ }
+\DoxyCodeLine{00311\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHOSPEDAGEM_a8db45014ac2a08584af8336888121b55}{SetNome}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classNOME}{NOME}}\&\ \_nome);}
+\DoxyCodeLine{00312\ }
+\DoxyCodeLine{00317\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHOSPEDAGEM_a890b122ac0d80f09ea25862311517db9}{SetAvaliacao}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\&\ \_avaliacao);}
+\DoxyCodeLine{00318\ }
+\DoxyCodeLine{00323\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHOSPEDAGEM_a7102b8c74906cb2cc24bfd3c3fb26cf4}{SetDiaria}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDINHEIRO}{DINHEIRO}}\&\ \_diaria);}
+\DoxyCodeLine{00324\ }
+\DoxyCodeLine{00329\ \ \ \ \ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \mbox{\hyperlink{classHOSPEDAGEM_a6cab2147d9084c9753a74beebefd0d12}{GetCodigo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00330\ }
+\DoxyCodeLine{00335\ \ \ \ \ \mbox{\hyperlink{classNOME}{NOME}}\ \mbox{\hyperlink{classHOSPEDAGEM_abc327bb819fa8a207f892de291e30a66}{GetNome}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00336\ }
+\DoxyCodeLine{00341\ \ \ \ \ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ \mbox{\hyperlink{classHOSPEDAGEM_a2642d7ca846c653cc9feed2a839bac6f}{GetAvaliacao}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00342\ }
+\DoxyCodeLine{00347\ \ \ \ \ \mbox{\hyperlink{classDINHEIRO}{DINHEIRO}}\ \mbox{\hyperlink{classHOSPEDAGEM_a19d7721309deed7e8e26b0413fa6b69d}{GetDiaria}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00348\ \};}
+\DoxyCodeLine{00349\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHOSPEDAGEM_a3d91a086e15246866970dc3767fa0c4a}{HOSPEDAGEM::SetCodigo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \&\_codigo)\ \{\ codigo\ =\ \_codigo;\ \}}
+\DoxyCodeLine{00350\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHOSPEDAGEM_a8db45014ac2a08584af8336888121b55}{HOSPEDAGEM::SetNome}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classNOME}{NOME}}\ \&\_nome)\ \{\ nome\ =\ \_nome;\ \}}
+\DoxyCodeLine{00351\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHOSPEDAGEM_a890b122ac0d80f09ea25862311517db9}{HOSPEDAGEM::SetAvaliacao}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ \&\_avaliacao)\ \{\ avaliacao\ =\ \_avaliacao;\ \}}
+\DoxyCodeLine{00352\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHOSPEDAGEM_a7102b8c74906cb2cc24bfd3c3fb26cf4}{HOSPEDAGEM::SetDiaria}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classDINHEIRO}{DINHEIRO}}\ \&\_diaria)\ \{\ diaria\ =\ \_diaria;\ \}}
+\DoxyCodeLine{00353\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ \mbox{\hyperlink{classHOSPEDAGEM_a6cab2147d9084c9753a74beebefd0d12}{HOSPEDAGEM::GetCodigo}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ codigo;\ \}}
+\DoxyCodeLine{00354\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classNOME}{NOME}}\ \mbox{\hyperlink{classHOSPEDAGEM_abc327bb819fa8a207f892de291e30a66}{HOSPEDAGEM::GetNome}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ nome;\ \}}
+\DoxyCodeLine{00355\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ \mbox{\hyperlink{classHOSPEDAGEM_a2642d7ca846c653cc9feed2a839bac6f}{HOSPEDAGEM::GetAvaliacao}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ avaliacao;\ \}}
+\DoxyCodeLine{00356\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classDINHEIRO}{DINHEIRO}}\ \mbox{\hyperlink{classHOSPEDAGEM_a19d7721309deed7e8e26b0413fa6b69d}{HOSPEDAGEM::GetDiaria}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ diaria;\ \}}
+\DoxyCodeLine{00357\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,16 @@
+\doxysection{teste.\+cpp File Reference}
+\hypertarget{teste_8cpp}{}\label{teste_8cpp}\index{teste.cpp@{teste.cpp}}
+
+
+Implementação dos testes de unidade para os componentes do sistema.  
+
+
+{\ttfamily \#include "{}teste.\+h"{}}\newline
+Include dependency graph for teste.\+cpp\+:
+% FIG 0
+
+
+\doxysubsection{Detailed Description}
+Implementação dos testes de unidade para os componentes do sistema. 
+
+Este arquivo contém as implementações das classes de teste para as entidades do sistema, como \doxylink{classCODIGO}{CODIGO}, \doxylink{classAVALIACAO}{AVALIACAO}, \doxylink{classDATA}{DATA}, \doxylink{classDINHEIRO}{DINHEIRO}, \doxylink{classDURACAO}{DURACAO}, \doxylink{classCONTA}{CONTA}, \doxylink{classATIVIDADE}{ATIVIDADE}, \doxylink{classDESTINO}{DESTINO}, \doxylink{classHOSPEDAGEM}{HOSPEDAGEM}, \doxylink{classVIAGEM}{VIAGEM}, \doxylink{classHORARIO}{HORARIO}, \doxylink{classNOME}{NOME} e \doxylink{classSENHA}{SENHA}. 

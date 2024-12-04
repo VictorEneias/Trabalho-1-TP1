@@ -3,32 +3,38 @@
 
 using namespace std;
 
+/**
+ * @brief Verifica a validade de uma avaliação.
+ * @param avaliacao Valor da avaliação (deve estar entre 0 e 5).
+ * @throw invalid_argument Se a avaliação estiver fora do intervalo permitido.
+ */
 void AVALIACAO::verifica(int avaliacao) {
     if (avaliacao < 0 || avaliacao > 5) {
         throw invalid_argument("Avaliação inválida: valor fora do intervalo permitido (0-5)");
     }
 }
 
-void CODIGO::verifica(string codigo)
-{
-    if (codigo.length() == 6)
-    {
+/**
+ * @brief Verifica a validade de um código.
+ * @param codigo Código a ser validado (deve conter 6 caracteres alfanuméricos).
+ * @throw invalid_argument Se o código não atender aos critérios.
+ */
+void CODIGO::verifica(string codigo) {
+    if (codigo.length() != 6) {
+        throw invalid_argument("Argumento inválido");
     }
-    else
-    {
-        throw invalid_argument("Argumento invalido");
-    }
-    for (int i = 0; i < codigo.length(); i++)
-    {
-        if (isdigit(codigo[i]) || isalpha(codigo[i]))
-        {
-        }
-        else
-        {
-            throw invalid_argument("Argumento invalido");
+    for (char c : codigo) {
+        if (!isdigit(c) && !isalpha(c)) {
+            throw invalid_argument("Argumento inválido");
         }
     }
 }
+
+/**
+ * @brief Verifica a validade de uma data.
+ * @param data Data no formato "DD-MM-AA".
+ * @throw invalid_argument Se a data estiver em formato incorreto ou inválida.
+ */
 void DATA::verifica(string data) {
     if (data.length() != 8 || data[2] != '-' || data[5] != '-') {
         throw invalid_argument("Data inválida: formato incorreto");
@@ -50,111 +56,96 @@ void DATA::verifica(string data) {
     }
 }
 
-void DINHEIRO::verifica(float dinheiro)
-{
-    if (dinheiro < 0 || dinheiro > 200000)
-    {
-        throw invalid_argument("Argumento invalido");
-    }
-}
-void DURACAO::verifica(int duracao)
-{
-    if (duracao < 0 || duracao > 360)
-    {
-        throw invalid_argument("Argumento invalido");
-    }
-}
-void NOME::verifica(string nome)
-{
-    if (nome.length() < 0 || nome.length() > 30)
-    {
-        throw invalid_argument("Argumento invalido");
-    }
-}
-void HORARIO::verifica(string horario)
-{
-    if (horario.length() != 5)
-    {
-        throw invalid_argument("Argumento invalido1");
-    }
-    else if (isdigit(horario[0]) != true || isdigit(horario[1]) != true ||
-             isdigit(horario[3]) != true || isdigit(horario[4]) != true)
-    {
-        throw invalid_argument("Argumento invalido2");
-    }
-    else
-    {
-        int hora = (10 * (horario[0] - '0')) + (horario[1] - '0');
-        int min = (10 * (horario[3] - '0')) + (horario[4] - '0');
-        if (hora < 0 || hora > 23 || min < 0 || min > 59)
-        {
-            throw invalid_argument("Argumento invalido3");
-        }
+/**
+ * @brief Verifica a validade de um valor em dinheiro.
+ * @param dinheiro Valor em dinheiro (deve estar entre 0 e 200000).
+ * @throw invalid_argument Se o valor estiver fora do intervalo permitido.
+ */
+void DINHEIRO::verifica(float dinheiro) {
+    if (dinheiro < 0 || dinheiro > 200000) {
+        throw invalid_argument("Argumento inválido");
     }
 }
 
-bool senhatest(string senha)
-{
-    if (senha.length() != 5){
-        return true;
+/**
+ * @brief Verifica a validade de uma duração.
+ * @param duracao Duração em minutos (deve estar entre 0 e 360).
+ * @throw invalid_argument Se a duração estiver fora do intervalo permitido.
+ */
+void DURACAO::verifica(int duracao) {
+    if (duracao < 0 || duracao > 360) {
+        throw invalid_argument("Argumento inválido");
     }
+}
+
+/**
+ * @brief Verifica a validade de um nome.
+ * @param nome Nome a ser validado (deve ter no máximo 30 caracteres).
+ * @throw invalid_argument Se o nome exceder o limite permitido.
+ */
+void NOME::verifica(string nome) {
+    if (nome.length() > 30) {
+        throw invalid_argument("Argumento inválido");
+    }
+}
+
+/**
+ * @brief Verifica a validade de um horário.
+ * @param horario Horário no formato "HH:MM".
+ * @throw invalid_argument Se o horário estiver em formato incorreto ou inválido.
+ */
+void HORARIO::verifica(string horario) {
+    if (horario.length() != 5 || horario[2] != ':' ||
+        !isdigit(horario[0]) || !isdigit(horario[1]) ||
+        !isdigit(horario[3]) || !isdigit(horario[4])) {
+        throw invalid_argument("Argumento inválido");
+    }
+    int hora = (horario[0] - '0') * 10 + (horario[1] - '0');
+    int min = (horario[3] - '0') * 10 + (horario[4] - '0');
+    if (hora < 0 || hora > 23 || min < 0 || min > 59) {
+        throw invalid_argument("Argumento inválido");
+    }
+}
+
+/**
+ * @brief Testa se uma senha atende aos critérios de segurança.
+ * @param senha Senha a ser testada.
+ * @return true Se a senha for inválida.
+ * @return false Se a senha for válida.
+ */
+bool senhatest(string senha) {
+    if (senha.length() != 5) return true;
+
     int array[5];
-    for (int i = 0; i < 5; i++)
-    {
-        if (isdigit(senha[i]))
-        {
-            array[i] = senha[i] - '0';
-        }
-        else
-        {
-            return true;
+    for (int i = 0; i < 5; i++) {
+        if (!isdigit(senha[i])) return true;
+        array[i] = senha[i] - '0';
+    }
+
+    bool ascending = true, descending = true;
+    for (int i = 1; i < 5; i++) {
+        if (array[i] != array[i - 1] + 1) ascending = false;
+        if (array[i] != array[i - 1] - 1) descending = false;
+    }
+    if (ascending || descending) return true;
+
+    for (int i = 0; i < 5; i++) {
+        for (int j = i + 1; j < 5; j++) {
+            if (array[i] == array[j]) return true;
         }
     }
 
-    if ((array[0] == array[1] - 1 &&
-         array[1] == array[2] - 1 &&
-         array[2] == array[3] - 1 &&
-         array[3] == array[4] - 1) ||
-        (array[0] == array[1] + 1 &&
-         array[1] == array[2] + 1 &&
-         array[2] == array[3] + 1 &&
-         array[3] == array[4] + 1))
-    {
-        return true;
-    }else
-    {
-        for (int i = 0; i < 5; i++)
-        {
-            int num=array[i];
-            for (int j = 0; j < 5; j++)
-            {
-                if (j!=i)
-                {
-                   if (num==array[j]){
-                    return true;
-                    } 
-                }
-                
-            }
-            
-        }
-        
-    }
     return false;
 }
 
-void SENHA::verifica(int _senha)
-{
+/**
+ * @brief Verifica a validade de uma senha.
+ * @param _senha Senha numérica com 5 dígitos.
+ * @throw invalid_argument Se a senha não atender aos critérios.
+ */
+void SENHA::verifica(int _senha) {
     string senha = to_string(_senha);
-    if (senha.length() != 5)
-    {
-        throw invalid_argument("Argumento invalido");
-    }
-    else if (senhatest(senha))
-    {
-        throw invalid_argument("Argumento invalido");
-    }
-
-    {
+    if (senha.length() != 5 || senhatest(senha)) {
+        throw invalid_argument("Argumento inválido");
     }
 }

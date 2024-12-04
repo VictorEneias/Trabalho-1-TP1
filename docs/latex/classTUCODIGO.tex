@@ -1,0 +1,63 @@
+\doxysection{TUCODIGO Class Reference}
+\hypertarget{classTUCODIGO}{}\label{classTUCODIGO}\index{TUCODIGO@{TUCODIGO}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classTUCODIGO_a7ad470efabdee4b530b90d7807ff92c2}{Run}} ()
+\begin{DoxyCompactList}\small\item\em Executa os testes de unidade para a classe \doxylink{classCODIGO}{CODIGO}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{classTUCODIGO_a3353949d0356a6e27a4c6a550abce6b8}{SUCESSO}} = 0
+\item 
+static const int \mbox{\hyperlink{classTUCODIGO_a0fb267aa603c260f888d6d1ff2f91b1c}{FALHA}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTUCODIGO_a7ad470efabdee4b530b90d7807ff92c2}\label{classTUCODIGO_a7ad470efabdee4b530b90d7807ff92c2} 
+\index{TUCODIGO@{TUCODIGO}!Run@{Run}}
+\index{Run@{Run}!TUCODIGO@{TUCODIGO}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily int TUCODIGO\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Executa os testes de unidade para a classe \doxylink{classCODIGO}{CODIGO}. 
+
+Método para executar os testes de unidade.
+
+Este método chama os métodos Set\+Up, Testar\+Cenario\+Sucesso, Testar\+Cenario\+Falha e Tear\+Down, e retorna o estado final do teste (SUCESSO ou FALHA).
+
+\begin{DoxyReturn}{Returns}
+O estado do teste (SUCESSO ou FALHA). 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Configura o ambiente de teste.
+
+\texorpdfstring{$<$}{<} Executa o teste de cenário de sucesso.
+
+\texorpdfstring{$<$}{<} Executa o teste de cenário de falha.
+
+\texorpdfstring{$<$}{<} Limpa o ambiente de teste.
+
+\texorpdfstring{$<$}{<} Retorna o estado final do teste.
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classTUCODIGO_a0fb267aa603c260f888d6d1ff2f91b1c}\label{classTUCODIGO_a0fb267aa603c260f888d6d1ff2f91b1c} 
+\index{TUCODIGO@{TUCODIGO}!FALHA@{FALHA}}
+\index{FALHA@{FALHA}!TUCODIGO@{TUCODIGO}}
+\doxysubsubsection{\texorpdfstring{FALHA}{FALHA}}
+{\footnotesize\ttfamily const int TUCODIGO\+::\+FALHA = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+Constante que representa o estado de falha do teste. Metodo publico \Hypertarget{classTUCODIGO_a3353949d0356a6e27a4c6a550abce6b8}\label{classTUCODIGO_a3353949d0356a6e27a4c6a550abce6b8} 
+\index{TUCODIGO@{TUCODIGO}!SUCESSO@{SUCESSO}}
+\index{SUCESSO@{SUCESSO}!TUCODIGO@{TUCODIGO}}
+\doxysubsubsection{\texorpdfstring{SUCESSO}{SUCESSO}}
+{\footnotesize\ttfamily const int TUCODIGO\+::\+SUCESSO = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Constante que representa o estado de sucesso do teste. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+teste.\+h\item 
+\mbox{\hyperlink{teste_8cpp}{teste.\+cpp}}\end{DoxyCompactItemize}

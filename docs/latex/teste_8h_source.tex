@@ -1,0 +1,228 @@
+\doxysection{teste.\+h}
+\hypertarget{teste_8h_source}{}\label{teste_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TESTE\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TESTE\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}dominio.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}entidade.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTUAVALIACAO}{TUAVALIACAO}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ AVALIACAO\_VALIDA\ \ \ =\ 4;\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ AVALIACAO\_INVALIDA\ =\ 6;\ }
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ *avaliacao;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp();\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown();\ \ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioSucesso();\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioFalha();\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUAVALIACAO_a46793312ee41e2aa5ff89a235fd34ac9}{SUCESSO}}\ =\ \ 0;\ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUAVALIACAO_adb0e88c7a0da4c34dcdb680b2241c5ca}{FALHA}}\ =\ -\/1;\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUAVALIACAO_a0fee8bcac86a2392d329d0c479006a61}{Run}}();\ }
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTUCODIGO}{TUCODIGO}}\ \{}
+\DoxyCodeLine{00031\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ CODIGO\_VALIDO\ \ \ =\ \textcolor{stringliteral}{"{}AbC123"{}};\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ CODIGO\_INVALIDO\ =\ \textcolor{stringliteral}{"{}AB-\/12"{}};\ }
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{classCODIGO}{CODIGO}}\ *codigo;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp();\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown();\ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioSucesso();\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioFalha();\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUCODIGO_a3353949d0356a6e27a4c6a550abce6b8}{SUCESSO}}\ =\ \ 0;\ \ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUCODIGO_a0fb267aa603c260f888d6d1ff2f91b1c}{FALHA}}\ =\ -\/1;\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUCODIGO_a7ad470efabdee4b530b90d7807ff92c2}{Run}}();\ }
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTUDATA}{TUDATA}}\ \{}
+\DoxyCodeLine{00052\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ DATA\_VALIDA\ \ \ =\ \textcolor{stringliteral}{"{}05-\/09-\/03"{}};\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ DATA\_INVALIDA\ =\ \textcolor{stringliteral}{"{}31-\/04-\/03"{}};\ }
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{classDATA}{DATA}}\ *data;}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp();\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown();\ \ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioSucesso();\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioFalha();\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUDATA_a3b9da48695d1f3e7d403ffdbe22cca9f}{SUCESSO}}\ =\ \ 0;\ \ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUDATA_a17557fe5b749151d238e21e09d02e895}{FALHA}}\ =\ -\/1;\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUDATA_a9712ca1cc4b854d1b240f4cf1e574069}{Run}}();\ }
+\DoxyCodeLine{00070\ \};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTUDINHEIRO}{TUDINHEIRO}}\ \{}
+\DoxyCodeLine{00073\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ DINHEIRO\_VALIDO\ \ \ =\ 420.69;\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ DINHEIRO\_INVALIDO\ =\ 234234234;\ }
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{classDINHEIRO}{DINHEIRO}}\ *dinheiro;}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp();\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown();\ \ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioSucesso();\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioFalha();\ }
+\DoxyCodeLine{00086\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUDINHEIRO_a694b3472d259a529c4c1abeefdc7bb2a}{SUCESSO}}\ =\ \ 0;\ \ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUDINHEIRO_a5351a84e50bd2e96df5a85e4e9223b53}{FALHA}}\ =\ -\/1;\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUDINHEIRO_ad544813a2822f0fc20ee160882ab38bd}{Run}}();\ }
+\DoxyCodeLine{00091\ \};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTUDURACAO}{TUDURACAO}}\ \{}
+\DoxyCodeLine{00094\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ DURACAO\_VALIDA\ \ \ =\ 6;\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ DURACAO\_INVALIDA\ =\ 361;\ }
+\DoxyCodeLine{00097\ \ \ \ \ \mbox{\hyperlink{classDURACAO}{DURACAO}}\ *duracao;}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp();\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown();\ \ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioSucesso();\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioFalha();\ }
+\DoxyCodeLine{00107\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUDURACAO_adda8de6c6ef08d9e28c36bb6de9d1e16}{SUCESSO}}\ =\ \ 0;\ \ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUDURACAO_acae6f6014b95e14130e936002b8bd003}{FALHA}}\ =\ -\/1;\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUDURACAO_ad93d61c69b14cc68a00d0b376c95e849}{Run}}();\ }
+\DoxyCodeLine{00112\ \};}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTUHORARIO}{TUHORARIO}}\ \{}
+\DoxyCodeLine{00115\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ HORARIO\_VALIDO\ \ \ =\ \textcolor{stringliteral}{"{}19:11"{}};\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ HORARIO\_INVALIDO\ =\ \textcolor{stringliteral}{"{}24:01"{}};\ }
+\DoxyCodeLine{00118\ \ \ \ \ \mbox{\hyperlink{classHORARIO}{HORARIO}}\ *horario;}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp();\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown();\ \ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioSucesso();\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioFalha();\ }
+\DoxyCodeLine{00128\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUHORARIO_a56c973fe155d717307db25c7ad0f7004}{SUCESSO}}\ =\ \ 0;\ \ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUHORARIO_a28cddfa481b59d3023d9e60a4111c4de}{FALHA}}\ =\ -\/1;\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUHORARIO_a75723b470bc1648a0b404c3ef0330d60}{Run}}();\ }
+\DoxyCodeLine{00133\ \};}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTUNOME}{TUNOME}}\ \{}
+\DoxyCodeLine{00136\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ NOME\_VALIDO\ \ \ =\ \textcolor{stringliteral}{"{}Victor\ Eneias"{}};\ }
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ NOME\_INVALIDO\ =\ \textcolor{stringliteral}{"{}Joao\ Pedro\ de\ Souza\ Lopes\ Silva"{}};\ }
+\DoxyCodeLine{00139\ \ \ \ \ \mbox{\hyperlink{classNOME}{NOME}}\ *nome;}
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;\ }
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp();\ }
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown();\ \ }
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioSucesso();\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioFalha();\ }
+\DoxyCodeLine{00149\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUNOME_ac2de6e2941fd2ad7276e17efaf5b6f3e}{SUCESSO}}\ =\ \ 0;\ \ }
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUNOME_a8dac8caa49d68166ddc14e661a74cd22}{FALHA}}\ =\ -\/1;\ }
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUNOME_a6d864513b997d8a8e2ec20740581d249}{Run}}();\ }
+\DoxyCodeLine{00154\ \};}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTUSENHA}{TUSENHA}}\ \{}
+\DoxyCodeLine{00157\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ SENHA\_VALIDA\ \ \ =\ 12386;\ }
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ SENHA\_INVALIDA\ =\ 12344;\ }
+\DoxyCodeLine{00160\ \ \ \ \ \mbox{\hyperlink{classSENHA}{SENHA}}\ *senha;}
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;\ }
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp();\ }
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown();\ \ }
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioSucesso();\ }
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioFalha();\ }
+\DoxyCodeLine{00170\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUSENHA_a232cedbf31cf6ed54f973c8f90f4fdc5}{SUCESSO}}\ =\ \ 0;\ \ }
+\DoxyCodeLine{00172\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUSENHA_aacf3ff90840cbfd2b883081989ba26df}{FALHA}}\ =\ -\/1;\ }
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUSENHA_a66236c48b69922776954ecc1b8aea340}{Run}}();\ }
+\DoxyCodeLine{00175\ \};}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTUCONTA}{TUCONTA}}\ \{}
+\DoxyCodeLine{00178\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ CODIGO\_VALIDO\ =\ \textcolor{stringliteral}{"{}123AbC"{}};}
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ SENHA\_VALIDA\ =\ 12385;\ \ }
+\DoxyCodeLine{00181\ \ \ \ \ \mbox{\hyperlink{classCONTA}{CONTA}}\ *conta;}
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;\ }
+\DoxyCodeLine{00186\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp();\ }
+\DoxyCodeLine{00187\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown();\ \ }
+\DoxyCodeLine{00188\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioSucesso();\ }
+\DoxyCodeLine{00190\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00191\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUCONTA_a7efbe3e83a223bd561351e0cfaed2c70}{SUCESSO}}\ =\ \ 0;\ \ }
+\DoxyCodeLine{00192\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUCONTA_abea3bd1a5bac14d91482d5b2199f51a3}{FALHA}}\ =\ -\/1;\ }
+\DoxyCodeLine{00194\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUCONTA_a3259f52ab78a5b59ac0f195a19ec9acc}{Run}}();\ }
+\DoxyCodeLine{00195\ \};}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTUVIAGEM}{TUVIAGEM}}\ \{}
+\DoxyCodeLine{00198\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00199\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ CODIGO\_VALIDO\ =\ \textcolor{stringliteral}{"{}123AbC"{}};}
+\DoxyCodeLine{00200\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ NOME\_VALIDO\ =\ \textcolor{stringliteral}{"{}Victor\ Eneias"{}};\ }
+\DoxyCodeLine{00201\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ AVALIACAO\_VALIDA\ =\ 4;}
+\DoxyCodeLine{00202\ \ \ \ \ \mbox{\hyperlink{classVIAGEM}{VIAGEM}}\ *viagem;}
+\DoxyCodeLine{00203\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;\ }
+\DoxyCodeLine{00207\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp();\ }
+\DoxyCodeLine{00208\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown();\ \ }
+\DoxyCodeLine{00209\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioSucesso();\ }
+\DoxyCodeLine{00211\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00212\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUVIAGEM_a0f33742cf560a712aadf1486a88fee57}{SUCESSO}}\ =\ \ 0;\ \ }
+\DoxyCodeLine{00213\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUVIAGEM_abd370015bcc0fb19b00b909a665950b7}{FALHA}}\ =\ -\/1;\ }
+\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUVIAGEM_a3fc8dc5dfc070135ac698c83f2804e7a}{Run}}();\ }
+\DoxyCodeLine{00216\ \};}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTUATIVIDADE}{TUATIVIDADE}}\ \{}
+\DoxyCodeLine{00219\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00220\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ CODIGO\_VALIDO\ =\ \textcolor{stringliteral}{"{}123AbC"{}};}
+\DoxyCodeLine{00221\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ NOME\_VALIDO\ =\ \textcolor{stringliteral}{"{}Victor\ Eneias"{}};\ }
+\DoxyCodeLine{00222\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ DATA\_VALIDA\ =\ \textcolor{stringliteral}{"{}19-\/11-\/03"{}};\ }
+\DoxyCodeLine{00223\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ HORARIO\_VALIDO\ =\ \textcolor{stringliteral}{"{}19:11"{}};\ }
+\DoxyCodeLine{00224\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ DURACAO\_VALIDA\ =\ 144;\ }
+\DoxyCodeLine{00225\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ PRECO\_VALIDO\ =\ 15600.05;\ }
+\DoxyCodeLine{00226\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ AVALIACAO\_VALIDA\ =\ 4;}
+\DoxyCodeLine{00227\ \ \ \ \ \mbox{\hyperlink{classATIVIDADE}{ATIVIDADE}}\ *atividade;}
+\DoxyCodeLine{00228\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;\ }
+\DoxyCodeLine{00232\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp();\ }
+\DoxyCodeLine{00233\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown();\ \ }
+\DoxyCodeLine{00234\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioSucesso();\ }
+\DoxyCodeLine{00236\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00237\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUATIVIDADE_a3ce66ea85e85cc6e42816010792a9178}{SUCESSO}}\ =\ \ 0;\ \ }
+\DoxyCodeLine{00238\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUATIVIDADE_a87706f59dde642d0f07eba23f09097cc}{FALHA}}\ =\ -\/1;\ }
+\DoxyCodeLine{00240\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUATIVIDADE_a43cd149fc875341160069a1c2f57f18f}{Run}}();\ }
+\DoxyCodeLine{00241\ \};}
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00243\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTUDESTINO}{TUDESTINO}}\ \{}
+\DoxyCodeLine{00244\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00245\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ CODIGO\_VALIDO\ =\ \textcolor{stringliteral}{"{}123AbC"{}};}
+\DoxyCodeLine{00246\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ NOME\_VALIDO\ =\ \textcolor{stringliteral}{"{}Victor\ Eneias"{}};\ }
+\DoxyCodeLine{00247\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ DATA\_INICIO\_VALIDA\ =\ \textcolor{stringliteral}{"{}19-\/11-\/03"{}};\ }
+\DoxyCodeLine{00248\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ DATA\_FINAL\_VALIDA\ =\ \textcolor{stringliteral}{"{}04-\/05-\/04"{}};\ }
+\DoxyCodeLine{00249\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ AVALIACAO\_VALIDA\ =\ 4;}
+\DoxyCodeLine{00250\ \ \ \ \ \mbox{\hyperlink{classDESTINO}{DESTINO}}\ *destino;}
+\DoxyCodeLine{00251\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;\ }
+\DoxyCodeLine{00255\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp();\ }
+\DoxyCodeLine{00256\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown();\ \ }
+\DoxyCodeLine{00257\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioSucesso();\ }
+\DoxyCodeLine{00259\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00260\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUDESTINO_af2a4d97a0556e79ea61529150e302540}{SUCESSO}}\ =\ \ 0;\ \ }
+\DoxyCodeLine{00261\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUDESTINO_a2a76f0bf6bdd41dfbc66975429a89685}{FALHA}}\ =\ -\/1;\ }
+\DoxyCodeLine{00263\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUDESTINO_a296915aeb22f8864743ad403bfff2d28}{Run}}();\ }
+\DoxyCodeLine{00264\ \};}
+\DoxyCodeLine{00265\ }
+\DoxyCodeLine{00266\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTUHOSPEDAGEM}{TUHOSPEDAGEM}}\ \{}
+\DoxyCodeLine{00267\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00268\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ CODIGO\_VALIDO\ =\ \textcolor{stringliteral}{"{}123AbC"{}};}
+\DoxyCodeLine{00269\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ NOME\_VALIDO\ =\ \textcolor{stringliteral}{"{}Victor\ Eneias"{}};}
+\DoxyCodeLine{00270\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ PRECO\_VALIDO\ =\ 15600.05;\ }
+\DoxyCodeLine{00271\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ AVALIACAO\_VALIDA\ =\ 4;}
+\DoxyCodeLine{00272\ \ \ \ \ \mbox{\hyperlink{classHOSPEDAGEM}{HOSPEDAGEM}}\ *hospedagem;}
+\DoxyCodeLine{00273\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;\ }
+\DoxyCodeLine{00277\ \ \ \ \ \textcolor{keywordtype}{void}\ SetUp();\ }
+\DoxyCodeLine{00278\ \ \ \ \ \textcolor{keywordtype}{void}\ TearDown();\ \ }
+\DoxyCodeLine{00279\ \ \ \ \ \textcolor{keywordtype}{void}\ TestarCenarioSucesso();\ }
+\DoxyCodeLine{00281\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00282\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUHOSPEDAGEM_a1e5594c3b4abadd0fdb534d9aebc7bb6}{SUCESSO}}\ =\ \ 0;\ \ }
+\DoxyCodeLine{00283\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUHOSPEDAGEM_a7739f7d3f74fb9d48d0751b60342a9bc}{FALHA}}\ =\ -\/1;\ }
+\DoxyCodeLine{00285\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTUHOSPEDAGEM_a423b2179b0f38510d0fe86d5ecd01e85}{Run}}();\ }
+\DoxyCodeLine{00286\ \};}
+\DoxyCodeLine{00287\ }
+\DoxyCodeLine{00288\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

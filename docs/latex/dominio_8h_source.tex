@@ -1,0 +1,168 @@
+\doxysection{dominio.\+h}
+\hypertarget{dominio_8h_source}{}\label{dominio_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DOMINIO\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DOMINIO\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classAVALIACAO}{AVALIACAO}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ avaliacao;\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ verifica(\textcolor{keywordtype}{int});\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classAVALIACAO_a70749381c2fc1cc44d29831fb296fedc}{GetAvaliacao}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classAVALIACAO_ad8455e8360bdcaab8a903dd5371eecd5}{SetAvaliacao}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCODIGO}{CODIGO}}\ \{}
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{string}\ codigo;\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ verifica(\textcolor{keywordtype}{string});\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classCODIGO_acb03214d320c3e5828d6b715c9d7140b}{GetCodigo}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCODIGO_a3778f0cd32ed258824f70d180631c1e7}{SetCodigo}}(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDATA}{DATA}}\ \{}
+\DoxyCodeLine{00057\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{string}\ data;\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ verifica(\textcolor{keywordtype}{string});\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classDATA_a9351a0af58e349caf3d5b393089aa925}{GetData}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDATA_aeab6174c41699e67362f7f3b7583aa66}{SetData}}(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00073\ \};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDINHEIRO}{DINHEIRO}}\ \{}
+\DoxyCodeLine{00079\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{float}\ dinheiro;\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ verifica(\textcolor{keywordtype}{float});\ }
+\DoxyCodeLine{00083\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classDINHEIRO_a2bd09ea04ffa241e66aa743a08318926}{GetDinheiro}}();}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDINHEIRO_ad2919e138d5616d276ad3bc7e0da7123}{SetDinheiro}}(\textcolor{keywordtype}{float});}
+\DoxyCodeLine{00095\ \};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00100\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDURACAO}{DURACAO}}\ \{}
+\DoxyCodeLine{00101\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{int}\ duracao;\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{void}\ verifica(\textcolor{keywordtype}{int});\ }
+\DoxyCodeLine{00105\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDURACAO_a6f73e5225683a8e917eafa9d22167825}{GetDuracao}}();}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDURACAO_aa6cf1ccaf834c52d3a7d07d0c5bc97b5}{SetDuracao}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00117\ \};}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00122\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classHORARIO}{HORARIO}}\ \{}
+\DoxyCodeLine{00123\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{string}\ horario;\ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{void}\ verifica(\textcolor{keywordtype}{string});\ }
+\DoxyCodeLine{00127\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classHORARIO_ad108704cf8c0fb3353f68ee2baec70f3}{GetHorario}}();}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHORARIO_a63f512d61383b92e9cdae45286769020}{SetHorario}}(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00139\ \};}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00144\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classNOME}{NOME}}\ \{}
+\DoxyCodeLine{00145\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{string}\ nome;\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{void}\ verifica(\textcolor{keywordtype}{string});\ }
+\DoxyCodeLine{00149\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00154\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classNOME_afbfd5c85612fbd387a2d5b35ffb5e931}{GetNome}}();}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNOME_a64d981a71b344850037d606643d58a9f}{SetNome}}(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00161\ \};}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00166\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSENHA}{SENHA}}\ \{}
+\DoxyCodeLine{00167\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{keywordtype}{int}\ senha;\ }
+\DoxyCodeLine{00169\ \ \ \ \ \textcolor{keywordtype}{void}\ verifica(\textcolor{keywordtype}{int});\ }
+\DoxyCodeLine{00171\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00176\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSENHA_a9350131d624255b1147d941ba14840be}{GetSenha}}();}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSENHA_ac7b089ee74b7e1cea9cccb2a6c673c03}{SetSenha}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00183\ \};}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classAVALIACAO_ad8455e8360bdcaab8a903dd5371eecd5}{AVALIACAO::SetAvaliacao}}(\textcolor{keywordtype}{int}\ avaliacao)\ \{}
+\DoxyCodeLine{00188\ \ \ \ \ verifica(avaliacao);}
+\DoxyCodeLine{00189\ \ \ \ \ this-\/>avaliacao\ =\ avaliacao;}
+\DoxyCodeLine{00190\ \}}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classAVALIACAO_a70749381c2fc1cc44d29831fb296fedc}{AVALIACAO::GetAvaliacao}}()\ \{}
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{keywordflow}{return}\ avaliacao;}
+\DoxyCodeLine{00194\ \}}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00196\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCODIGO_a3778f0cd32ed258824f70d180631c1e7}{CODIGO::SetCodigo}}(\textcolor{keywordtype}{string}\ codigo)\ \{}
+\DoxyCodeLine{00197\ \ \ \ \ verifica(codigo);}
+\DoxyCodeLine{00198\ \ \ \ \ this-\/>codigo\ =\ codigo;}
+\DoxyCodeLine{00199\ \}}
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00201\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classCODIGO_acb03214d320c3e5828d6b715c9d7140b}{CODIGO::GetCodigo}}()\ \{}
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keywordflow}{return}\ codigo;}
+\DoxyCodeLine{00203\ \}}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDATA_aeab6174c41699e67362f7f3b7583aa66}{DATA::SetData}}(\textcolor{keywordtype}{string}\ data)\ \{}
+\DoxyCodeLine{00206\ \ \ \ \ verifica(data);}
+\DoxyCodeLine{00207\ \ \ \ \ this-\/>data\ =\ data;}
+\DoxyCodeLine{00208\ \}}
+\DoxyCodeLine{00209\ }
+\DoxyCodeLine{00210\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classDATA_a9351a0af58e349caf3d5b393089aa925}{DATA::GetData}}()\ \{}
+\DoxyCodeLine{00211\ \ \ \ \ \textcolor{keywordflow}{return}\ data;}
+\DoxyCodeLine{00212\ \}}
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00214\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDINHEIRO_ad2919e138d5616d276ad3bc7e0da7123}{DINHEIRO::SetDinheiro}}(\textcolor{keywordtype}{float}\ dinheiro)\ \{}
+\DoxyCodeLine{00215\ \ \ \ \ verifica(dinheiro);}
+\DoxyCodeLine{00216\ \ \ \ \ this-\/>dinheiro\ =\ dinheiro;}
+\DoxyCodeLine{00217\ \}}
+\DoxyCodeLine{00218\ }
+\DoxyCodeLine{00219\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classDINHEIRO_a2bd09ea04ffa241e66aa743a08318926}{DINHEIRO::GetDinheiro}}()\ \{}
+\DoxyCodeLine{00220\ \ \ \ \ \textcolor{keywordflow}{return}\ dinheiro;}
+\DoxyCodeLine{00221\ \}}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDURACAO_aa6cf1ccaf834c52d3a7d07d0c5bc97b5}{DURACAO::SetDuracao}}(\textcolor{keywordtype}{int}\ duracao)\ \{}
+\DoxyCodeLine{00224\ \ \ \ \ verifica(duracao);}
+\DoxyCodeLine{00225\ \ \ \ \ this-\/>duracao\ =\ duracao;}
+\DoxyCodeLine{00226\ \}}
+\DoxyCodeLine{00227\ }
+\DoxyCodeLine{00228\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classDURACAO_a6f73e5225683a8e917eafa9d22167825}{DURACAO::GetDuracao}}()\ \{}
+\DoxyCodeLine{00229\ \ \ \ \ \textcolor{keywordflow}{return}\ duracao;}
+\DoxyCodeLine{00230\ \}}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00232\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classHORARIO_a63f512d61383b92e9cdae45286769020}{HORARIO::SetHorario}}(\textcolor{keywordtype}{string}\ horario)\ \{}
+\DoxyCodeLine{00233\ \ \ \ \ verifica(horario);}
+\DoxyCodeLine{00234\ \ \ \ \ this-\/>horario\ =\ horario;}
+\DoxyCodeLine{00235\ \}}
+\DoxyCodeLine{00236\ }
+\DoxyCodeLine{00237\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classHORARIO_ad108704cf8c0fb3353f68ee2baec70f3}{HORARIO::GetHorario}}()\ \{}
+\DoxyCodeLine{00238\ \ \ \ \ \textcolor{keywordflow}{return}\ horario;}
+\DoxyCodeLine{00239\ \}}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00241\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNOME_a64d981a71b344850037d606643d58a9f}{NOME::SetNome}}(\textcolor{keywordtype}{string}\ nome)\ \{}
+\DoxyCodeLine{00242\ \ \ \ \ verifica(nome);}
+\DoxyCodeLine{00243\ \ \ \ \ this-\/>nome\ =\ nome;}
+\DoxyCodeLine{00244\ \}}
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00246\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classNOME_afbfd5c85612fbd387a2d5b35ffb5e931}{NOME::GetNome}}()\ \{}
+\DoxyCodeLine{00247\ \ \ \ \ \textcolor{keywordflow}{return}\ nome;}
+\DoxyCodeLine{00248\ \}}
+\DoxyCodeLine{00249\ }
+\DoxyCodeLine{00250\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSENHA_ac7b089ee74b7e1cea9cccb2a6c673c03}{SENHA::SetSenha}}(\textcolor{keywordtype}{int}\ senha)\ \{}
+\DoxyCodeLine{00251\ \ \ \ \ verifica(senha);}
+\DoxyCodeLine{00252\ \ \ \ \ this-\/>senha\ =\ senha;}
+\DoxyCodeLine{00253\ \}}
+\DoxyCodeLine{00254\ }
+\DoxyCodeLine{00255\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSENHA_a9350131d624255b1147d941ba14840be}{SENHA::GetSenha}}()\ \{}
+\DoxyCodeLine{00256\ \ \ \ \ \textcolor{keywordflow}{return}\ senha;}
+\DoxyCodeLine{00257\ \}}
+\DoxyCodeLine{00258\ }
+\DoxyCodeLine{00259\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
