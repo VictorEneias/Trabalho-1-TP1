@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1733403212 source:/home/victor-eneias/Documents/Faculdade/TP1 Again/dominio.cpp
+	"dominio.h"
+	<iostream>
+
+1733403212 /home/victor-eneias/Documents/Faculdade/TP1 Again/dominio.h
+	<stdexcept>
+	<algorithm>
+
+1732537279 source:/home/victor-eneias/Documents/Faculdade/TP1 Again/entidade.cpp
+	"entidade.h"
+
+1733403212 /home/victor-eneias/Documents/Faculdade/TP1 Again/entidade.h
+	"dominio.h"
+
+1733226416 source:/home/victor-eneias/Documents/Faculdade/TP1 Again/main.cpp
+	<iostream>
+	"dominio.h"
+	"entidade.h"
+	"teste.h"
+
+1732878524 /home/victor-eneias/Documents/Faculdade/TP1 Again/teste.h
+	"dominio.h"
+	"entidade.h"
+
+1733403212 source:/home/victor-eneias/Documents/Faculdade/TP1 Again/teste.cpp
+	"teste.h"
+	"teste.h"
+
